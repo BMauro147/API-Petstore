@@ -20,13 +20,13 @@ En este proyecto, me enfoqué en realizar pruebas de tres funcionalidades princi
    - Validación de la devolución de un token de sesión válido al iniciar sesión correctamente.
 
 3. **Obtener mascotas por estado (GET /pet/findByStatus)**:
-   - Filtrado de mascotas por estado (disponible, pendiente, vendida).
+   - Filtrado de mascotas por estado (available, pending, sold).
    - Pruebas con estados válidos e inválidos para verificar la respuesta correcta o el manejo de errores.
 
 ## Análisis de Resultados
 - **Caso Positivo (Crear usuario)**: La API respondió correctamente con un código 200 OK y un mensaje de éxito cuando se crearon los usuarios con todos los campos necesarios.
-- **Caso Negativo (Crear usuario sin datos obligatorios)**: La API devolvió un error 400 (Bad Request) cuando se intentó crear un usuario sin el campo obligatorio `lastName`.
-- **Acceso de Usuario**: Con credenciales válidas, la API devolvió un token de acceso, y con credenciales incorrectas, devolvió un error 401 (Unauthorized).
+- **Caso Negativo (Crear usuario sin datos obligatorios)**: La API devolvió un error 400 (Bad Request) cuando se intentó crear un usuario sin el campo obligatorio `userStatus`.
+- **Acceso de Usuario**: Se logró comprobar el acceso con respuesta 200 OK, pero las pruebas negativas las falló ya que solo respondia 200 OK aun con valores incorrectos.
 - **Obtener mascotas por estado**: Se obtuvieron resultados esperados con estados válidos, y con estados inválidos, la API devolvió un error 400.
 
 ## Conclusiones
@@ -39,7 +39,7 @@ Este proyecto no solo validó las funcionalidades de la API, sino que también m
 ## Instrucciones para Ejecutar las Pruebas
 1. **Pre-requisitos**:
    - Instalar **Postman** en tu máquina.
-   - Clonar o descargar este repositorio.
+   - Descargar este repositorio.
    - Importar la colección de Postman desde el archivo `Petstore API Tests.postman_collection.json`.
 
 2. **Ejecutar las pruebas**:
