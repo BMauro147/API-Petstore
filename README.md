@@ -48,4 +48,4 @@ Este proyecto no solo validó las funcionalidades de la API, sino que también m
    - Verifica las respuestas y asegúrate de que los resultados coincidan con los resultados esperados.
 
 ## Contacto
--(https://www.linkedin.com/in/maurobecerragalvan/)
+https://www.linkedin.com/in/maurobecerragalvan/
